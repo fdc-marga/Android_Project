@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <ImageButton
+        android:id="@+id/transaction_delete_button"
+        android:layout_width="33dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:background="@drawable/edittext"
+        android:src="@drawable/delete"></ImageButton>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/userIDTextView"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:padding="7dp"
+                android:text="File:"
+                android:textSize="10dp"></TextView>
+
+            <Button
+                android:id="@+id/viewFile"
+                android:layout_width="198dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:text="Click to view file"
+                android:textSize="7dp" />
+
+
+            <!--<TextView
+                android:id="@+id/userID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="userID"
+                android:textSize="10dp"
+                android:background="@drawable/edittext"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="10dp"
+                ></TextView>-->
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/applicationStatusTextView"
+                android:layout_width="194dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:padding="7dp"
+                android:text="Application Status:"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:id="@+id/application_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:paddingLeft="10dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:text="application status"
+                android:textSize="15dp"></TextView>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/userPurposeTextView"
+                android:layout_width="194dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:padding="7dp"
+                android:text="Purpose:"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:id="@+id/user_purpose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:paddingLeft="10dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:text="user purpose"
+                android:textSize="15dp"></TextView>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/adminReasonTextView"
+                android:layout_width="194dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:padding="7dp"
+                android:text="Admin Reason:"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:id="@+id/admin_reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:paddingLeft="10dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:text="-"
+                android:textSize="15dp"></TextView>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/transactionCreatedTextView"
+                android:layout_width="166dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:padding="7dp"
+                android:text="Transaction Created:"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:id="@+id/transaction_created"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:paddingLeft="10dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:text="transaction created"
+                android:textSize="15dp"></TextView>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

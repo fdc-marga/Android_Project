@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.Registration">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/e_barangay_logo" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_horizontal"
+        android:text="E-Barangay"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration"
+        android:layout_gravity="center"
+        android:textSize="40dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/register_ediText_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/edittext"
+        android:drawableStart="@drawable/username_logo"
+        android:drawablePadding="10dp"
+        android:hint="Email"
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/register_editText_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/edittext"
+        android:drawableStart="@drawable/password_logo"
+        android:drawablePadding="10dp"
+        android:hint="Password"
+        android:padding="8dp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="180dp"/>
+
+   <!-- <EditText
+        android:id="@+id/register_editText_firstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="First Name"
+        android:background="@drawable/edittext"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/username_logo"
+        android:drawablePadding="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="22dp"/>
+
+    <EditText
+        android:id="@+id/register_editText_lastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Last Name"
+        android:background="@drawable/edittext"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/username_logo"
+        android:drawablePadding="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"/>
+
+
+    &lt;!&ndash;<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="20dp"
+            android:text="Gender:"
+            android:textSize="20dp"
+            android:paddingTop="2dp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/register_radioButton_female"
+                android:layout_width="140dp"
+                android:layout_height="31dp"
+                android:text="Female" />
+
+            <RadioButton
+                android:id="@+id/register_radioButton_male"
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+                android:text="Male" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+&ndash;&gt;
+    <EditText
+        android:id="@+id/register_editText_userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:background="@drawable/edittext"
+        android:padding="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/username_logo"
+        android:drawablePadding="10dp"/>
+
+    <EditText
+        android:id="@+id/register_editText_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@drawable/edittext"
+        android:padding="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/password_logo"
+        android:drawablePadding="10dp"/>
+
+    <EditText
+        android:id="@+id/register_editText_confirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:background="@drawable/edittext"
+        android:padding="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/password_logo"
+        android:drawablePadding="10dp"/>
+
+    <EditText
+        android:id="@+id/register_editText_birthDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Birthdate"
+        android:inputType="textPassword"
+        android:background="@drawable/edittext"
+        android:padding="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/birthdate_logo"
+        android:drawablePadding="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edittext">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status:"
+            android:textSize="17dp"
+            android:padding="7dp"
+            android:drawableLeft="@drawable/baseline_circle_24"
+            android:drawablePadding="10dp"/>
+
+        <Spinner
+            android:id="@+id/register_spinner_marital_status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="7dp" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/register_radioButton_female"
+            android:layout_width="96dp"
+            android:layout_height="31dp"
+            android:text="Female" />
+
+        <RadioButton
+            android:id="@+id/register_radioButton_male"
+            android:layout_width="123dp"
+            android:layout_height="31dp"
+            android:text="Male" />
+
+    </RadioGroup>
+
+
+        &lt;!&ndash;<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="24dp">
+
+        <EditText
+            android:id="@+id/register_editText_firstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="First Name"
+            android:background="@drawable/edittext"
+            android:padding="10dp"
+            android:layout_marginRight="5dp"
+            android:drawableLeft="@drawable/username_logo"
+            android:drawablePadding="10dp"/>
+
+        <EditText
+            android:id="@+id/register_editText_lastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Last Name"
+            android:background="@drawable/edittext"
+            android:padding="10dp"
+            android:layout_marginRight="5dp"
+            android:drawableLeft="@drawable/username_logo"
+            android:drawablePadding="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="73dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="10dp"
+            android:text="Gender:"
+            android:textSize="15dp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/register_radioButton_female"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="-10dp"
+                android:text="Female" />
+
+            <RadioButton
+                android:id="@+id/register_radioButton_male"
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Male" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="63dp"
+            android:layout_marginTop="10dp"
+            android:text="Status:"
+            android:textSize="15dp" />
+
+        <Spinner
+            android:id="@+id/register_spinner_marital_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/register_editText_userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:background="@drawable/edittext"
+        android:padding="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/username_logo"
+        android:drawablePadding="10dp"/>
+
+    <EditText
+        android:id="@+id/register_editText_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@drawable/edittext"
+        android:padding="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/password_logo"
+        android:drawablePadding="10dp"/>
+
+    <EditText
+        android:id="@+id/register_editText_confirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:background="@drawable/edittext"
+        android:padding="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/password_logo"
+        android:drawablePadding="10dp"/>
+
+    <EditText
+        android:id="@+id/register_editText_birthDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Birthdate"
+        android:inputType="textPassword"
+        android:background="@drawable/edittext"
+        android:padding="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/birthdate_logo"
+        android:drawablePadding="10dp"/>&ndash;&gt;
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="19dp"
+        android:text="Register" />-->
+
+</LinearLayout>

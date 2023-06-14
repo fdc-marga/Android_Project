@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.UserTransaction">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="TRANSACTIONS"
+        android:textSize="30dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/transactionRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="776dp"
+        android:paddingTop="40dp"></androidx.recyclerview.widget.RecyclerView>
+
+    <!--<TextView
+        android:id="@+id/view_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View File"
+        android:clickable="true"/>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="TRANSACTION"
+              android:textSize="40dp"
+              android:gravity="center"/>
+
+          <TableLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="50dp"
+              android:layout_marginTop="15dp"
+              android:layout_marginRight="50dp">
+
+              <TableRow
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+                  <TextView
+                      android:background="@drawable/edittext"
+                      android:padding="5dp"
+                      android:text="Status:" />
+
+                  <TextView
+                      android:id="@+id/transaction_status"
+                      android:layout_width="245dp"
+                      android:background="@drawable/edittext"
+                      android:padding="5dp"
+                      android:text="TEST" />
+              </TableRow>
+
+              <TableRow>
+
+                  <TextView
+                      android:background="@drawable/edittext"
+                      android:padding="5dp"
+                      android:text="Date:" />
+
+                  <TextView
+                      android:id="@+id/transaction_date"
+                      android:background="@drawable/edittext"
+                      android:padding="5dp"
+                      android:text="TEST" />
+              </TableRow>
+
+              <TableRow>
+
+                  <TextView
+                      android:id="@+id/transaction_userPurpose"
+                      android:background="@drawable/edittext"
+                      android:padding="5dp"
+                      android:text="Purpose:" />
+
+                  <TextView
+                      android:background="@drawable/edittext"
+                      android:padding="5dp"
+                      android:text="TEST" />
+              </TableRow>
+
+              <TableRow>
+
+                  <TextView
+                      android:id="@+id/transaction_file"
+                      android:background="@drawable/edittext"
+                      android:padding="5dp"
+                      android:text="File:" />
+
+                  <TextView
+                      android:background="@drawable/edittext"
+                      android:clickable="true"
+                      android:padding="5dp"
+                      android:text="View" />
+              </TableRow>
+          </TableLayout>
+
+          <ListView
+              android:id="@+id/listview"
+              android:layout_width="match_parent"
+              android:layout_height="339dp" />
+
+
+      </LinearLayout>-->
+
+
+</FrameLayout>

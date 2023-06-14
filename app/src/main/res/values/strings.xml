@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">E-Barangay</string>
+    <string-array name="register_spinner_marital_status">
+        <item> </item>
+        <item>Single</item>
+        <item>Married</item>
+        <item>Divorced</item>
+        <item>Widow</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

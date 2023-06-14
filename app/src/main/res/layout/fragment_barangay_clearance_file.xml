@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.BarangayClearanceFragment"
+    android:id="@+id/userFrame_container">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity.BarangayClearance"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp">
+
+            <ImageView
+                android:id="@+id/barangay_logo"
+                android:layout_width="153dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/barangay_canduman_logo"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:text="REPUBLIC OF THE PHILIPPINES\nDEPARTMENT OF INTERIOR AND LOCAL GOVERNMENT\nOFFICE OF THE PUNONG BARANGAY\nH.Abellana, Mandaue City, Cebu\n(032) 236 8256 " />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BARANGAY CLEARANCE CERTIFICATION"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is to ceritfy that the person whose photo apper here in is a bonafide resident of this barangay. He/She is a good moral character, a law abiding citizen, and has no deragatory record on file as of this date."
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:justificationMode="inter_word"
+            android:layout_marginBottom="15dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="Full Name:"
+                android:gravity="right"/>
+
+            <TextView
+                android:id="@+id/bc_fullName"
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:hint="Full Name"
+                android:paddingTop="3dp"
+                android:paddingLeft="20dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="Address:"
+                android:gravity="right"/>
+
+            <TextView
+                android:id="@+id/bc_address"
+                android:layout_width="277dp"
+                android:layout_height="38dp"
+                android:hint="Address"
+                android:paddingLeft="20dp"
+                android:paddingTop="3dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="Date of Birth:"
+                android:gravity="right"/>
+
+            <TextView
+                android:id="@+id/bc_dateOfBirth"
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:hint="Date of Birth"
+                android:paddingTop="3dp"
+                android:paddingLeft="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="Place of Birth:"
+                android:gravity="right"/>
+
+            <TextView
+                android:id="@+id/bc_placeOfBirth"
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:hint="Place of Birth"
+                android:paddingTop="3dp"
+                android:paddingLeft="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="Gender:"
+                android:gravity="right"/>
+
+            <TextView
+                android:id="@+id/bc_gender"
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:hint="Gender"
+                android:paddingTop="3dp"
+                android:paddingLeft="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="Civil Status:"
+                android:gravity="right"/>
+
+            <TextView
+                android:id="@+id/bc_civilStatus"
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:hint="Civil Status"
+                android:paddingTop="3dp"
+                android:paddingLeft="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="Purpose:"
+                android:gravity="right"/>
+
+            <TextView
+                android:id="@+id/bc_userPurpose"
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:hint="Purpose"
+                android:paddingTop="3dp"
+                android:paddingLeft="20dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="18dp">
+
+            <ImageView
+                android:id="@+id/bc_userImage"
+                android:layout_width="187dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                app:srcCompat="@drawable/e_barangay_logo" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="87dp"
+                    android:text="__________________________"
+                    android:gravity="bottom"/>
+
+                <TextView
+                    android:layout_width="183dp"
+                    android:layout_height="37dp"
+                    android:gravity="center"
+                    android:text="Applicant Signature" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="397dp"
+            android:layout_height="61dp"
+            app:srcCompat="@drawable/baranggay_captain_signature"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="_____________________________" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center"
+            android:text="HON. HANNAHUSE CHUA" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Punong Barangay" />
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
